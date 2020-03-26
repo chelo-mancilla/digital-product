@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* ---------------------------Variables */
+:root {
+--green-color: #7ACC2D;
+--white-color: white;
+--black-color: #313337;
+/* Tipografía */
+--normal: 12px;
+/* Espaciado */
+--space: 10px;
+/* Box Shadow */
+--box: 0 0 1px #c1bcbc;
+}
+/* ---------------------------Variables */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+}
+nav {
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+   padding-left: 20px;
+   list-style: none;
+}
+nav li a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+nav li a:hover {
+  color: var(--white-color);
+}
+
+/* -------------------------------- Main section */
+
+.main_section {
+  padding: 15%;
+  text-align: center;
+}
+.products {
+  background-image: url("../images/curve.png");
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+.product {
+  padding: var(--space);
+  margin-top: -240px;
+}
+.product .content {
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box);
+}
+.image_content {
+  text-align: center;
+}
+.main_button {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.main_button:hover {
+  background-color: #5e9e22;
+}
+
+/* Beneficios */
+.beneficios{
+  padding: 10%;
+  display: flex;
+}
+
+.beneficio{
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficio img{
+  max-height: 100px
+}
+
+.text_beneficio{
+  text-align: justify;
+}
+
+
+
+/* -------------------------------- Benefits */
+/* .benefits {
+  display: flex;
+  padding: 10%;
+  border-bottom: 1px solid lightgrey;
+}
+.benefit {
+  text-align: center;
+  padding: 20px;
+}
+.benefit p {
+  text-align: justify;
+
+}
+.benefit_content img {
+  max-height: 100px;
+} */
+
+/* -------------------------------- Mentions */
+.mentions_title {
+  text-align: center;
+  margin: 50px auto 25px auto;
+}
+.mentions {
+  display: flex;
+  margin: 0 0 25px 0;
+  justify-content: center;
+  text-align: center;
+
+}
+.mention {
+  margin: 5px;
+  padding: 0;
+  box-shadow: 0px 3px 6px #00000029;
+  margin-top: 0px;
+  text-align: left;
+}
+.mention_image {
+  margin: 0;
+  padding: 0;
+}
+.mention_image img {
+  max-width: 100%;
+}
+
+/* -------------------------------- Footer */
+.footer {
+  display: flex;
+  background: #313337;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0;
+}
+footer p a {
+  text-decoration: none;
+  color: var(--white-color);
+
+}
